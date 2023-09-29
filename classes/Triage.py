@@ -12,3 +12,5 @@ class Triage:
      def assign_code(self):
           self.code = codes.get_code(self.symptoms)
           
+     
+          
