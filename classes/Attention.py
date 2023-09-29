@@ -1,20 +1,13 @@
-class Atencion:
-    
- medical_care_states = [
-    "Medical exams", 
-    "Diagnostic tests",
-    "Curative procedures", 
-    "Stabilization and monitoring",
-    ]
+from utils import treatment
 
- discharge_statuses = [
-    "Discharge",
-    "Voluntary Discharge",
-    "Referred for Hospitalization",
-    "Referred to a Specialist Physician",
-    "Morgue",
- ]
-
-
-
-
+class Attention:
+   def __init__(self ):
+      self.status = "admision"
+      self.treatments = []
+        
+   def assign_treatment(self):
+      self.treatments = treatment.get_treatment(self.code)
+          
+   def set_status(self, status):
+      self.status = status
+      

@@ -1,5 +1,6 @@
 from utils import codes
 
+
 class Triage:
      def __init__(self, pacient):
           self.pacient = pacient
@@ -12,5 +13,6 @@ class Triage:
      def assign_code(self):
           self.code = codes.get_code(self.symptoms)
           
+     
      
           

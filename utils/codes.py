@@ -1,8 +1,10 @@
 triage_codes = {
-    "Blue": ["Cardiac arrest", "Respiratory arrest", "Shock", "Seizure", "Loss of an organ", "Loss of a limb"],
-    "Urgent": ["Tachycardia", "High blood pressure with headaches", "Loss of balance", "Severe choking", "Bleeding", "Extreme pain", "Intoxication"],
-    "Normal": ["Chest pain", "Palpitations", "High blood pressure", "Mild choking", "Nasal trauma"],
-    "Mild": ["Tonsillitis", "Pharyngitis", "Diarrhea without dehydration", "Uncontrolled high blood pressure"]
+    
+"Azul": ["Paro cardíaco", "Paro respiratorio", "Shock", "Convulsión", "Pérdida de un órgano", "Pérdida de una extremidad"],
+"Urgente": ["Taquicardia", "Presión arterial alta con dolores de cabeza", "Pérdida de equilibrio", "Asfixia grave", "Sangrado", "Dolor extremo", "Intoxicación"],
+"Normal": ["Dolor en el pecho", "Palpitaciones", "Presión arterial alta", "Asfixia leve", "Trauma nasal"],
+"Leve": ["Amigdalitis", "Faringitis", "Diarrea sin deshidratación", "Presión arterial alta no controlada"]
+
 }
 
 def match_sympthom(code_sympthoms, pacient_sympthoms):
