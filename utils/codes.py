@@ -4,7 +4,6 @@ triage_codes = {
 "Urgente": ["Taquicardia", "Presión arterial alta con dolores de cabeza", "Pérdida de equilibrio", "Asfixia grave", "Sangrado", "Dolor extremo", "Intoxicación"],
 "Normal": ["Dolor en el pecho", "Palpitaciones", "Presión arterial alta", "Asfixia leve", "Trauma nasal"],
 "Leve": ["Amigdalitis", "Faringitis", "Diarrea sin deshidratación", "Presión arterial alta no controlada"]
-
 }
 
 def match_sympthom(code_sympthoms, pacient_sympthoms):
