@@ -12,6 +12,9 @@ class Triage:
      def assign_code(self):
           self.code = codes.get_code(self.symptoms)
           
+     def get_code(self):
+          return self.code
+          
      def symptoms_str(self):
           all_symtoms = ""
           for s in self.symptoms:
@@ -21,6 +24,6 @@ class Triage:
      
           
      def __str__(self):
-          return "Sintomas >>> " + self.symptoms_str()
+          return "Sintomas >>> " + self.symptoms_str() + "Codigo: " + self.code
      
           
