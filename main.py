@@ -1,7 +1,6 @@
-from business.paciente import Patient
-from business.triage import Triage
-from business.attention import Attention
-from collections import deque 
+from classes.paciente import Patient
+from classes.triage import Triage
+from classes.attention import Attention
 import csv
 
 
@@ -32,7 +31,7 @@ with open('/Users/laurajimenez/dev_study/urgencias/data.csv') as csv_file:
         if triage.get_code()=="Leve":
             codigos_leve.append(atencion)
          
-""" for a in codigos_azul:
+for a in codigos_azul:
     print(a)
         
 for b in codigos_urgente:
@@ -42,17 +41,16 @@ for c in codigos_normal:
     print(c)
         
 for d in codigos_leve:
-    print(d) """
+    print(d) 
 
-
-""" q=deque()
-[q.append(k) for k in codigos_azul] """
 
 a = len(codigos_azul)
 i=0
 while i < a:
     print("\nPersonas atendidas de codigo azul:") 
-    print(codigos_azul.pop()) 
+    atencion = codigos_azul.pop()
+    atencion.status = "Remitido a hospitalizacion"
+    print(atencion)
     i+=1
     
            
@@ -60,16 +58,20 @@ while i < a:
 b = len(codigos_urgente)
 i=0
 while i < b:
-    print("\nPersonas atendidas de Urgencias:") 
-    print(codigos_urgente.pop()) 
-    i+=1
+     print("\nPersonas atendidas de Urgencias:") 
+     atencion = codigos_urgente.pop()
+     atencion.status = "Remitido a médico especialista"
+     print(atencion)
+     i+=1
 
 
 c = len(codigos_normal)
 i=0
 while i < c:
     print("\nPersonas atendidas de urgencias normales:") 
-    print(codigos_normal.pop()) 
+    atencion = codigos_normal.pop()
+    atencion.status = "Dado de alta"
+    print(atencion)
     i+=1
 
     
@@ -77,8 +79,11 @@ d = len(codigos_leve)
 i=0
 while i < d:
     print("\nPersonas atendidas de urgencias leves:") 
-    print(codigos_leve.pop()) 
+    atencion = codigos_leve.pop()
+    atencion.status = "Alta voluntaria"
+    print(atencion)
     i+=1
 
    
    
+ 

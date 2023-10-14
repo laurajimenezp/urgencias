@@ -1,5 +1,6 @@
 from utils import treatment
 
+
 class Attention:
    def __init__(self, pacient, triage_code):
       self.status = "admision"
@@ -22,5 +23,5 @@ class Attention:
           return all_treatments
      
    def __str__(self):
-          return "Paciente: " + self.pacient.first_name + "    Codigo: " + self.triage_code + "    Tratamientos:  " + self.treatments_str() + "    Estado : " + self.status
+          return "Paciente: " + self.pacient.first_name + "   Codigo: " + self.triage_code + "    Tratamientos:  " + self.treatments_str() + "    Estado : " + self.status 
       
