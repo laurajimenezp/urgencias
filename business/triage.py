@@ -1,3 +1,4 @@
+import queue
 from utils import codes
 
 class Triage:
@@ -26,4 +27,4 @@ class Triage:
      def __str__(self):
           return "Sintomas >>> " + self.symptoms_str() + "Codigo: " + self.code
      
-          
+    

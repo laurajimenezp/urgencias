@@ -22,5 +22,5 @@ class Attention:
           return all_treatments
      
    def __str__(self):
-          return "Tratamientos >>> " + self.treatments_str() + "Estado : " + self.status
+          return "Paciente: " + self.pacient.first_name + "    Codigo: " + self.triage_code + "    Tratamientos:  " + self.treatments_str() + "    Estado : " + self.status
       
